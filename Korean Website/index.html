@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Korean Typing Game</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <body class="light-theme">
+        <h1>Task List</h1>
+        <p id="msg">Current tasks:</p>
+        <ul>
+            <li class="list">Add visual styles=done</li>
+            <li class="list">Add light and dark themes=done</li>
+            <li>Enable switching the theme=done</li>
+        </ul>
+        <div>
+            <button class="btn">Dark</button>
+        </div>
+        <h1>Typing Game</h1>
+        <p>Practice typing in Korean! Click to Start to begin!</p>
+        <p id="sentence"></p> <!--this is how you quote. Also this where we display our sentence-->
+        <p id ="message"></p> <!--where we display any status msg-->
+        <div>
+            <input class="typingbox" type="text" aria-label="current word" id="typed-value" /> <!--textbox-->
+            <button class="btn2" type="button" id="start">Start</button> <!--Start Button-->
+        </div>
+        <h2>Add More Sentences</h2>
+        <form action="action.php" method="post">
+            <label for="korsen">New Sentence:</label><br>
+            <input type="text" id="korsen" name="korsen"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <script src="app.js"></script>
+        <script>
+        /*var xhr = new XMLHttpRequest();
+        xhr.open("POST", "getdb.php");
+        xhr.onload = function()
+        {
+            var jsvar = this.response;
+            console.log(jsvar);
+            jsvar = JSON.parse(jsvar);
+            console.log(jsvar);
+        };
+        xhr.send(); */
+        </script>
+        <noscript>You need to enable JavaScript to view the full site.</noscript>
+
+    </body>
+</html>

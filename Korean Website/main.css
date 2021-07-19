@@ -1,0 +1,81 @@
+body {
+    font-family: monospace;
+}
+
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    /*gonna have to choose a different color to make it more readable*/
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn:focus {
+    outline-style: none;
+}
+
+.highlight {
+    background-color: rgb(255, 217, 0)
+}
+
+.error {
+    background-color: #ff0000;
+    border: red;
+}
+
+.btn2 {
+    position: absolute;
+    left: 560px;
+}
+
+.typingbox {
+    position: absolute;
+    left: 500px;
+    top: 350px
+}
